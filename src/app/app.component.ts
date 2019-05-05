@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
 
-  @Input() serverElements = [{type:'server',  name:'Test server', content:'Just a test'}];
+  serverElements = [{type:'server',  name:'Test server', content:'Just a test'}];
   
 
 }

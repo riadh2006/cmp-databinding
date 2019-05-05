@@ -8,7 +8,7 @@ import { AppComponent } from '../app.component';
 })
 export class ServerElementComponent implements OnInit {
 
-  @Input() element: {type: string, name: string, content: string};
+  @Input('srvElement') element: {type: string, name: string, content: string};
     
   constructor() { }
 
