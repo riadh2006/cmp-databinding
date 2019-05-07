@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewEncapsulation, OnChanges, SimpleChanges, DoCheck, AfterContentInit } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation, OnChanges, SimpleChanges, DoCheck, AfterContentChecked } from '@angular/core';
 import { AppComponent } from '../app.component';
 
 @Component({
@@ -31,6 +31,10 @@ export class ServerElementComponent implements OnInit, OnChangesو DoCheck {
 
   ngAfterContentInit(){
     console.log('ngAfterContentInit called !!');
+  }
+
+  ngAfterContentChecked(){
+    console.log('ngAfterContentChecked called !!');
   }
 
 }
